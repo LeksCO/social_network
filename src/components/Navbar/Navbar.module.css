@@ -1,0 +1,62 @@
+   .nav {
+    grid-area: n;
+    background-color: rgb(27, 27, 27);
+    margin: 10px 5px 10px 70px;
+    border-radius: 15px;
+    padding: 10px;
+    
+  }
+
+  .activeLink {
+    display: table-cell;
+  }
+
+  .item {     
+    display: table;   
+    width: 165px;
+    height: 20px;
+    text-align:center; 
+    vertical-align: middle;   
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+    line-height: 2;
+    border: 1px solid rgb(27, 27, 27);    
+    transition: all 0.2s ease-in;    
+  }
+  
+  .item a {
+    display: table-row;
+    color: rgb(158, 158, 158);
+    text-decoration: none;    
+  }
+
+  .item a:active,
+  .item a:focus,
+  .item a:hover {    
+    color: rgb(236, 236, 236);   
+  }
+ 
+  .item:hover {
+    text-align: center; 
+    border-color: #1782cf;
+    border-width: 1px;    
+    border-radius:10px ;
+    width: 165px;
+    height: 20px;
+  }
+   
+  .item:active{
+    text-align: center; 
+    background-color: #1782cf; 
+    border-radius:10px ;
+    width: 165px;
+    height: 20px;
+  }
+
+  .friends img {
+    padding: 6px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+    
