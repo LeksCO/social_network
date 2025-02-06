@@ -3,10 +3,10 @@ const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT'
 
 let initialState = {
     posts : [
-    { messageId: 1, message: "Hi, how are you?", likesCount: "15" },
-    { messageId: 2, message: "Its my first post", likesCount: "21" },
-    { messageId: 3, message: "bla bla", likesCount: "20" },
-    { messageId: 4, message: "Its", likesCount: "1" },
+    { id: 1, message: "Hi, how are you?", likesCount: "15" },
+    { id: 2, message: "Its my first post", likesCount: "21" },
+    { id: 3, message: "bla bla", likesCount: "20" },
+    { id: 4, message: "Its", likesCount: "1" },
   ],
 newPostText: ''}
 

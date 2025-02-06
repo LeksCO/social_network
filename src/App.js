@@ -9,7 +9,8 @@ import News from "./components/News/News";
 import Friends from "./components/Friends/Friends";
 import { Route, Routes } from "react-router-dom";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
-import Users from "./components/Users/Users";
+import UsersConteiner from "./components/Users/UsersConteiner";
+
 
 const App = (props) => { 
   return (
@@ -21,7 +22,7 @@ const App = (props) => {
         <Routes>
           <Route path="/profile" element= {<Profile/>} />
           <Route path="/dialogs/*" element= {<DialogsContainer/>} />
-          <Route peth="/users" element = {<Users/>} />
+          <Route path="/users" element = {<UsersConteiner/>} />
           <Route path="/news" element= {<News />} />
           <Route path="/music" element= {<Music />} />
           <Route path="/settings" element= {<Settings />} />
