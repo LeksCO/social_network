@@ -4,8 +4,68 @@
   height: 50px;
   width: 100%;
   border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;     
 }
 
 .header img {
   width: 50px;
+}
+.loginBlock {  
+  margin-left: auto;
+  justify-content: flex-end;
+  float: right;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  border-radius:10px;  
+  
+  /* Стили текста */
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: rgb(236, 236, 236);
+  
+  /* Предотвращаем смещение при добавлении границы */
+  box-sizing: border-box;
+}
+
+.loginBlock:hover {
+  border-color: #1782cf;  
+  font-weight: bold;
+  text-align: center;  
+  border-radius:10px ;
+  width: 100px;
+  height: 30px;
+  color: rgb(236, 236, 236);
+}
+
+.loginBlock a {
+  display: table-row;
+  color: rgb(158, 158, 158);
+  text-decoration: none;    
+}
+
+.loginBlock a:active,
+.loginBlock a:focus,
+.loginBlock a:hover {    
+    color: rgb(236, 236, 236);   
+  }
+
+.loginBlock.active {
+  border-color: #1782cf; 
+  font-weight: bold;
+  text-align: center;  
+  border-radius:10px ;
+  width: 100px;
+  height: 30px;
+  color: rgb(236, 236, 236);
 }
