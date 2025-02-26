@@ -10,6 +10,7 @@ import {
     useParams,
 } from "react-router-dom";
 import { withAuthRedirect } from "../../../hoc/withAuthRedirect";
+import { compose } from "redux";
 
 class ProfileContainer extends React.Component {     
 
@@ -19,16 +20,12 @@ class ProfileContainer extends React.Component {
             userId = 2;
         }
         this.props.getUserProfile(userId)        
-    }
-
-    render () {       
+    }    render () {       
         return <div>
             <Profile {...this.props} profile ={this.props.profile}/>            
             </div>
             }
-        };
-
-        let AuthRedirectComponent = withAuthRedirect(ProfileContainer);
+        };   
         
         let mapStateToProps = (state) => ({
             profile: state.profilePage.profile,            
@@ -49,4 +46,7 @@ class ProfileContainer extends React.Component {
         
             return ComponentWithRouterProp;
         }
-export default connect(mapStateToProps, {getUserProfile})(withRouter(AuthRedirectComponent));
+export default compose(
+    connect(mapStateToProps, {getUserProfile}),
+    withRouter,
+    withAuthRedirect)(ProfileContainer)
