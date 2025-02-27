@@ -1,6 +1,6 @@
 .postsBlock {
     padding: 10px;
-    color: rgb(236, 236, 236); 
+    color: rgb(44, 171, 255); 
 }
 
 button {
@@ -8,9 +8,9 @@ button {
     height: 30px;
     border-radius: 5px;
     text-align: center;
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(167, 206, 250);
     color: rgb(158, 158, 158);
-    border: 1px solid rgb(27, 27, 27);    
+    border: 1px solid rgb(167, 206, 250);    
     transition: all 0.2s ease-in; 
 }
 
@@ -25,7 +25,7 @@ button:active {
 }
 
 textarea {
-    background-color: rgb(27, 27, 27); 
+    background-color: rgb(167, 206, 250); 
     width: 545px;
     height: 75px;
     border-radius: 7px;

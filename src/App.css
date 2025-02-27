@@ -15,7 +15,7 @@
 .app-wrapper-content {  
   height: 100vh;
   grid-area: c;
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(245, 249, 253);
   margin: 10px 110px 10px 5px;
   border-radius: 15px;
 }

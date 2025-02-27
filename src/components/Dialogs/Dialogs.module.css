@@ -5,7 +5,7 @@
     grid-template-areas: 
   "f t"
   "f m";
-    color: rgb(236, 236, 236); 
+    color: rgb(132, 150, 252); 
 }
 
 .dialogItems {
@@ -15,13 +15,13 @@
 
 
 .dialog .active {
-    color: rgb(255, 255, 255);
+    color: rgb(74, 131, 255);
 }
 
 .dialog {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    color: rgb(236, 236, 236);
+    color: rgb(120, 183, 255);
     text-decoration: none;
     padding: 10px 0px ;  
 } 
@@ -39,14 +39,14 @@
 }
 
 .dialog a {
-    color: rgb(236, 236, 236);
+    color: rgb(123, 154, 255);
     text-decoration: none; 
     text-align: center;
     line-height: 50px;       
 }
 
 .dialog a:hover {
-    color: rgb(255, 0, 0);
+    color: rgb(2, 42, 102);
     text-decoration: none; 
 }
 
