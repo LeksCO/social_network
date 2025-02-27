@@ -9,15 +9,18 @@ const ProfileInfo = (props) => {
     return <Preloader />
   }
 
-  return (  
-    <div>  
+  return (
+    <div>
       {/*<div>
         <img src="https://avatars.mds.yandex.net/i?id=3f7b64adc36c27b5f0b616bcc977a4c0812a97ff-11924985-images-thumbs&n=13"></img>
       </div>*/}
       <div className={s.descriptionBlock}>
         <img src={props.profile.photos.large} />
-        <ProfileStatus status='Hello my friends'/>
-        </div>
+        <ProfileStatus
+          status={props.status}
+          updateStatus={props.updateStatus}
+        />
+      </div>
     </div>
   );
 };
